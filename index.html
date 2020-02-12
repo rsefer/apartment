@@ -30,9 +30,8 @@
 		padding: 1em;
 	}
 
-	.avatar {
-		display: none;
-		max-width: 100%;
+	header {
+		text-align: center;
 	}
 
 	a,
@@ -66,15 +65,15 @@
 		padding: 0px;
 	}
 
-	ul li {
+	/* ul li {
 		display: inline-block;
 		vertical-align: middle;
 		margin: 0px;
-	}
+	} */
 
-	ul li + li {
+	/* ul li + li {
 		margin-left: 4px;
-	}
+	} */
 
 	.image-grid {
 		display: flex;
@@ -85,7 +84,7 @@
 
 	.image-grid a {
 		display: block;
-		margin: 0.125em 0px;
+		margin: 0.25em 0px;
 		flex-basis: 100%;
 		width: 100%;
 	}
@@ -138,7 +137,7 @@
 		}
 
 		.image-grid a {
-			flex-basis: calc((100% - 0.25em) / 2);
+			flex-basis: calc((100% - 0.5em) / 2);
 		}
 
 		.map {
@@ -153,13 +152,13 @@
 			width: calc(1140px - 2em);
 		}
 
-		.image-grid a {
+		/* .image-grid a {
 			flex-basis: calc((100% - 0.75em) / 3);
-		}
+		} */
 
 	}
 
-	@media (prefers-color-scheme: dark) {
+	/* @media (prefers-color-scheme: dark) {
 
 		body {
 			color: #d3d3d3;
@@ -170,7 +169,7 @@
 			color: #e0e0e0;
 		}
 
-	}
+	} */
 
 	</style>
 </head>
@@ -178,21 +177,30 @@
 
 <main itemprop="location" itemscope itemtype="http://schema.org/Place">
 	<article>
-		<h1><span itemprop="name">Ideal Gold Coast Studio Apartment</span> For Rent</h1>
-		<h3><span class="green">$1,450 per month</span> &bull; available June 1st, 2020</h3>
-		<div class="address" itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
-			<span itemprop="streetAddress">1 East Scott Street #1402</span><br>
-			<span itemprop="addressLocality">Chicago</span>, <span itemprop="addressRegion">IL</span> <span itemprop="postalCode">60610</span>
-		</div>
-		<h4>Contact:</h4>
-		<p>EMAIL + PHONE</p>
+		<header>
+			<h1><span itemprop="name">Ideal Gold Coast Studio Apartment</span> For Rent</h1>
+			<h3><span class="green">$1,450 per month</span> &bull; available June 1st, 2020</h3>
+			<div class="address" itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+				<span itemprop="streetAddress">1 East Scott Street #1402</span><br>
+				<span itemprop="addressLocality">Chicago</span>, <span itemprop="addressRegion">IL</span> <span itemprop="postalCode">60610</span>
+			</div>
+			<h4>Contact:</h4>
+			<p><a href="mailto:rsefer@gmail.com" target="_blank">rsefer@gmail.com</a> &bull; <a href="tel:+16302040013" target="_blank">(630) 204-0013</a></p>
+		</header>
 		<h4>Features:</h4>
 		<ul>
-			<li>1</li>
+			<li>Recently renovated kitchen and main living area. New windows in 2017. New HVAC in 2018.</li>
+			<li>Water, Gas, Heat, AC, Basic Cable, and Internet all included in rent. Renter pays electric</li>
+			<li>3 blocks to lake front. 5 minute walk to Lincoln Park</li>
+			<li>2 blocks from Clark/Division Red Line stop. 1-2 blocks from 22, 36, 70, 151 bus stops</li>
+			<li>All furniture is (optionally) available for rent or purchase</li>
 		</ul>
 		<h4>Building Amenities:</h4>
 		<ul>
-			<li>1</li>
+			<li>24 hour doorperson</li>
+			<li>Rooftop pool</li>
+			<li>Large laundry room in basement</li>
+			<li>Attached Parking Garage</li>
 		</ul>
 		<h4>FAQs:</h4>
 		<ul>
