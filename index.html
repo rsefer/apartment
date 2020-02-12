@@ -60,7 +60,7 @@
 	}
 
 	ul {
-		list-style-type: none;
+		/* list-style-type: none; */
 		margin: 0px;
 		padding: 0px;
 	}
@@ -74,6 +74,17 @@
 	/* ul li + li {
 		margin-left: 4px;
 	} */
+
+	.details {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		align-content: flex-start;
+	}
+
+	.details-block {
+		flex-basis: 100%;
+	}
 
 	.image-grid {
 		display: flex;
@@ -136,6 +147,10 @@
 			font-size: 20px;
 		}
 
+		.details-block {
+			flex-basis: calc((100% - 3em) / 2);
+		}
+
 		.image-grid a {
 			flex-basis: calc((100% - 0.5em) / 2);
 		}
@@ -178,30 +193,40 @@
 <main itemprop="location" itemscope itemtype="http://schema.org/Place">
 	<article>
 		<header>
-			<h1><span itemprop="name">Ideal Gold Coast Studio Apartment</span> For Rent</h1>
+			<h1><span itemprop="name">Gold Coast Studio Apartment</span> For Rent</h1>
 			<h3><span class="green">$1,450 per month</span> &bull; available June 1st, 2020</h3>
 			<div class="address" itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
 				<span itemprop="streetAddress">1 East Scott Street #1402</span><br>
 				<span itemprop="addressLocality">Chicago</span>, <span itemprop="addressRegion">IL</span> <span itemprop="postalCode">60610</span>
 			</div>
 			<h4>Contact:</h4>
-			<p><a href="mailto:rsefer@gmail.com" target="_blank">rsefer@gmail.com</a> &bull; <a href="tel:+16302040013" target="_blank">(630) 204-0013</a></p>
+			<p><a href="mailto:rsefer@gmail.com?subject=Apartment+for+rent" target="_blank">rsefer@gmail.com</a> &bull; <a href="tel:+16302040013" target="_blank">(630) 204-0013</a></p>
 		</header>
-		<h4>Features:</h4>
-		<ul>
-			<li>Recently renovated kitchen and main living area. New windows in 2017. New HVAC in 2018.</li>
-			<li>Water, Gas, Heat, AC, Basic Cable, and Internet all included in rent. Renter pays electric</li>
-			<li>3 blocks to lake front. 5 minute walk to Lincoln Park</li>
-			<li>2 blocks from Clark/Division Red Line stop. 1-2 blocks from 22, 36, 70, 151 bus stops</li>
-			<li>Any/all furniture is optionally available for rent or purchase</li>
-		</ul>
-		<h4>Building Amenities:</h4>
-		<ul>
-			<li>24 hour doorperson</li>
-			<li>Rooftop pool</li>
-			<li>Large laundry room in basement</li>
-			<li>Attached Parking Garage</li>
-		</ul>
+		<div class="details">
+			<div class="details-block">
+				<h4>Features:</h4>
+				<ul>
+					<li><strong>Renovated kitchen</strong> with granite countertops, <strong>dishwasher</strong>, and dine-in peninsula.</li>
+					<li><strong>Wood floors</strong> in main living area</li>
+					<li>Large custom closet</li>
+					<li>New windows in 2017. New HVAC in 2018</li>
+					<li>Smart light switches</li>
+					<li>Water, Gas, Heat, A/C, Basic Cable, and Internet all included in rent. Renter pays electric</li>
+					<li>Any/all furniture is optionally available for rent or purchase</li>
+				</ul>
+			</div>
+			<div class="details-block">
+				<h4>Building Amenities:</h4>
+				<ul>
+					<li>24/7 door person</li>
+					<li><strong>Rooftop pool</strong></li>
+					<li>Large laundry room in basement</li>
+					<li><strong>Attached Parking Garage</strong></li>
+					<li><strong>3 blocks to lake front</strong>. 5 minute walk to Lincoln Park</li>
+					<li>2 blocks from Clark/Division Red Line stop. 2 blocks from 22, 36, 70, 151 bus stops</li>
+				</ul>
+			</div>
+		</div>
 		<h4>FAQs:</h4>
 		<ul>
 			<li>1</li>
@@ -222,8 +247,7 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/featherlight/1.7.13/featherlight.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/featherlight/1.7.13/featherlight.gallery.min.js"></script>
 <script>
-$('.image-grid a').featherlightGallery({
-});
+$('.image-grid a').featherlightGallery();
 </script>
 
 </body>
