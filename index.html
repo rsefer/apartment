@@ -213,7 +213,12 @@
 	}
 
 	.map-wrap {
+		margin-top: 2rem;
 		text-align: center;
+	}
+
+	.map-wrap hr {
+		margin-bottom: 2rem;
 	}
 
 	.faqs-list {
@@ -368,8 +373,8 @@
 				<ul class="menu">
 					<li><a href="#details">Details</a></li>
 					<li><a href="#pictures">Pictures</a></li>
-					<li><a href="#map">Map</a></li>
 					<li><a href="#faqs">FAQs</a></li>
+					<li><a href="#map">Map</a></li>
 					<li><a href="#contact">Contact</a></li>
 				</ul>
 			</div>
@@ -402,57 +407,65 @@
 				</div>
 			</div>
 		</div>
-	</div>
-	<div id="pictures" class="image-grid">
-		<a href="images/main.jpg?v=1" data-featherlight="image"><div class="image-wrap" style="background-image: url('images/main.jpg?v=1');"></div></a>
-		<a href="images/living.jpg?v=1" data-featherlight="image"><div class="image-wrap" style="background-image: url('images/living.jpg?v=1');"></div></a>
-		<a href="images/living-office.jpg?v=1" data-featherlight="image"><div class="image-wrap" style="background-image: url('images/living-office.jpg?v=1');"></div></a>
-		<a href="images/bed.jpg?v=1" data-featherlight="image"><div class="image-wrap" style="background-image: url('images/bed.jpg?v=1');"></div></a>
-		<a href="images/kitchen.jpg?v=1" data-featherlight="image"><div class="image-wrap" style="background-image: url('images/kitchen.jpg?v=1');"></div></a>
-		<a href="images/bathroom.jpg?v=1" data-featherlight="image"><div class="image-wrap" style="background-image: url('images/bathroom.jpg?v=1');"></div></a>
-		<a href="images/closet-closed.jpg?v=1" data-featherlight="image"><div class="image-wrap" style="background-image: url('images/closet-closed.jpg?v=1');"></div></a>
-		<a href="images/closet-open.jpg?v=1" data-featherlight="image"><div class="image-wrap" style="background-image: url('images/closet-open.jpg?v=1');"></div></a>
-		<a href="images/lobby.jpg?v=1" class="portrait" data-featherlight="image"><div class="image-wrap" style="background-image: url('images/lobby.jpg?v=1');"></div></a>
-		<a href="images/pool-wide.jpg?v=1" class="portrait" data-featherlight="image"><div class="image-wrap" style="background-image: url('images/pool-wide.jpg?v=1');"></div></a>
-		<a href="images/building.jpg?v=1" class="portrait" data-featherlight="image"><div class="image-wrap" style="background-image: url('images/building.jpg?v=1');"></div></a>
-	</div>
-	<div id="map" class="map-wrap">
-		<div class="wrapper">
-			<h2>Address:</h2>
-			<div class="address" itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
-				<span itemprop="streetAddress">1 East Scott Street #1402</span><br>
-				<span itemprop="addressLocality">Chicago</span>, <span itemprop="addressRegion">IL</span> <span itemprop="postalCode">60610</span>
-			</div>
+		<div id="pictures" class="image-grid">
+			<a href="images/main.jpg?v=1" data-featherlight="image"><div class="image-wrap" style="background-image: url('images/main.jpg?v=1');"></div></a>
+			<a href="images/living.jpg?v=1" data-featherlight="image"><div class="image-wrap" style="background-image: url('images/living.jpg?v=1');"></div></a>
+			<a href="images/living-office.jpg?v=1" data-featherlight="image"><div class="image-wrap" style="background-image: url('images/living-office.jpg?v=1');"></div></a>
+			<a href="images/bed.jpg?v=1" data-featherlight="image"><div class="image-wrap" style="background-image: url('images/bed.jpg?v=1');"></div></a>
+			<a href="images/kitchen.jpg?v=1" data-featherlight="image"><div class="image-wrap" style="background-image: url('images/kitchen.jpg?v=1');"></div></a>
+			<a href="images/bathroom.jpg?v=1" data-featherlight="image"><div class="image-wrap" style="background-image: url('images/bathroom.jpg?v=1');"></div></a>
+			<a href="images/closet-closed.jpg?v=1" data-featherlight="image"><div class="image-wrap" style="background-image: url('images/closet-closed.jpg?v=1');"></div></a>
+			<a href="images/closet-open.jpg?v=1" data-featherlight="image"><div class="image-wrap" style="background-image: url('images/closet-open.jpg?v=1');"></div></a>
+			<a href="images/lobby.jpg?v=1" class="portrait" data-featherlight="image"><div class="image-wrap" style="background-image: url('images/lobby.jpg?v=1');"></div></a>
+			<a href="images/pool-wide.jpg?v=1" class="portrait" data-featherlight="image"><div class="image-wrap" style="background-image: url('images/pool-wide.jpg?v=1');"></div></a>
+			<a href="images/building.jpg?v=1" class="portrait" data-featherlight="image"><div class="image-wrap" style="background-image: url('images/building.jpg?v=1');"></div></a>
 		</div>
-		<iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11877.841489850469!2d-87.63703679604825!3d41.90446107911804!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880fd3500332ff0f%3A0x5635558d242ddafd!2s1%20E%20Scott%20St%2C%20Chicago%2C%20IL%2060610!5e0!3m2!1sen!2sus!4v1582571818268!5m2!1sen!2sus" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
-	</div>
-	<div class="wrapper">
-		<h4 id="faqs">FAQs:</h4>
-		<ul class="faqs-list">
-			<li>
-				<div class="question">Is the move-in date flexible? How do I move?</div>
-				<div class="answer">The move-in date may be flexible - this can be discussed. When the date is decided, we can coordinate in advance with building management. They require a $200 deposit to reserve the service elevator (returned after move-in is complete) and a $150 non-refundable move-in fee.</div>
-			</li>
-			<li>
-				<div class="question">How much does parking cost?</div>
-				<div class="answer">The attached garage is operated by State Parking. At the time of this writing (February 2020) the monthly cost for residents is $260. More information is <a href="https://parking.com/chicago/lot/one-east-scott?lot_id=21348&showListOnly=1&view=daily&sw=41.90172937893564,-87.63229618856744&ne=41.90712310716364,-87.6247120114321&facility&valet&general=&displayFullCity=0&start=2020-02-12T11%3A30&stop=2020-02-12T14%3A30">available here</a>. Zoned street parking is also available.</div>
-			</li>
-			<li>
-				<div class="question">Can I smoke? How about pets?</div>
-				<div class="answer">No smoking or pets allowed in the unit or in the building, sorry!</div>
-			</li>
-			<li>
-				<div class="question">Can I sign a lease longer/shorter than 12 months?</div>
-				<div class="answer">The building requires an initial lease of at least 12 months. After the first year, there is more flexibility. We are happy to discuss 18-to-24 month leases if preferred.</div>
-			</li>
-			<!-- <li>
-				<div class="question">Do I need to pay a security deposit?</div>
-				<div class="answer">A security deposit equal to one month of rent is required. At the end of the lease, <a href="https://www.chicago.gov/city/en/depts/doh/provdrs/landlords/svcs/security-deposit-interest-rates.html">in accordance with City of Chicago laws</a>, this deposit, plus interest, minus unpaid rent and expenses for damages, will be returned.</div>
-			</li> -->
-		</ul>
-		<div id="contact" class="contact footer-contact">
-			<h2>Contact:</h2>
-			<p><a href="mailto:rsefer@gmail.com?subject=Apartment+for+rent" target="_blank">rsefer@gmail.com</a> &bull; <a href="tel:+16302040013" target="_blank">(630) 204-0013</a></p>
+		<div class="wrapper">
+			<h4 id="faqs">FAQs:</h4>
+			<ul class="faqs-list">
+				<li>
+					<div class="question">Is the move-in date flexible? How do I move?</div>
+					<div class="answer">The move-in date may be flexible - this can be discussed. When the date is decided, we can coordinate in advance with building management. They require a $200 deposit to reserve the service elevator (returned after move-in is complete) and a $150 non-refundable move-in fee.</div>
+				</li>
+				<li>
+					<div class="question">How much does parking cost?</div>
+					<div class="answer">The attached garage is operated by State Parking. At the time of this writing (February 2020) the monthly cost for residents is $260. More information is <a href="https://parking.com/chicago/lot/one-east-scott?lot_id=21348&showListOnly=1&view=daily&sw=41.90172937893564,-87.63229618856744&ne=41.90712310716364,-87.6247120114321&facility&valet&general=&displayFullCity=0&start=2020-02-12T11%3A30&stop=2020-02-12T14%3A30">available here</a>. Zoned street parking is also available.</div>
+				</li>
+				<li>
+					<div class="question">Can I have pets?</div>
+					<div class="answer">No pets allowed in the unit or in the building, sorry!</div>
+				</li>
+				<li>
+					<div class="question">Can I smoke?</div>
+					<div class="answer">No smoking allowed in the unit or in the building, sorry!</div>
+				</li>
+				<li>
+					<div class="question">Can I sign a lease longer/shorter than 12 months?</div>
+					<div class="answer">The building requires an initial lease of at least 12 months. After the first year, there is more flexibility. We are happy to discuss 18-to-24 month leases if preferred.</div>
+				</li>
+				<!-- <li>
+					<div class="question">Do I need to pay a security deposit?</div>
+					<div class="answer">A security deposit equal to one month of rent is required. At the end of the lease, <a href="https://www.chicago.gov/city/en/depts/doh/provdrs/landlords/svcs/security-deposit-interest-rates.html">in accordance with City of Chicago laws</a>, this deposit, plus interest, minus unpaid rent and expenses for damages, will be returned.</div>
+				</li> -->
+			</ul>
+		</div>
+		<div id="map" class="map-wrap">
+			<div class="wrapper">
+				<hr>
+				<h2>Address:</h2>
+				<div class="address" itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+					<span itemprop="streetAddress">1 East Scott Street #1402</span><br>
+					<span itemprop="addressLocality">Chicago</span>, <span itemprop="addressRegion">IL</span> <span itemprop="postalCode">60610</span>
+				</div>
+			</div>
+			<iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11877.841489850469!2d-87.63703679604825!3d41.90446107911804!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880fd3500332ff0f%3A0x5635558d242ddafd!2s1%20E%20Scott%20St%2C%20Chicago%2C%20IL%2060610!5e0!3m2!1sen!2sus!4v1582571818268!5m2!1sen!2sus" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+		</div>
+		<div class="wrapper">
+			<div id="contact" class="contact footer-contact">
+				<h2>Contact:</h2>
+				<p><a href="mailto:rsefer@gmail.com?subject=Apartment+for+rent" target="_blank">rsefer@gmail.com</a> &bull; <a href="tel:+16302040013" target="_blank">(630) 204-0013</a></p>
+			</div>
+
 		</div>
 	</article>
 </main>
